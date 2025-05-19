@@ -116,7 +116,7 @@ body {
 
 }
 .titulo, #header p {
-	flex: 1 0 400px;
+	flex: 1 0 360px;
 	text-align: left;
 }
 #header h2 {
