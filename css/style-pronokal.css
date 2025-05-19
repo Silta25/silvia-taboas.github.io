@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--maincolor: #9e72ce;
+	--maincolor2: #00adba;
+	--light: rgb(244, 247, 247);
+	--light2: rgb(249, 245, 251);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Antonio", sans-serif;
+}
+/**********HEADER**********/
+header {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 	2000;
+}
+.fix-container {
+	background-color: black;
+	position: relative;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.st {
+	z-index: 50;
+	padding: 10px 70px 10px 15px;
+	background: linear-gradient(to right, black 70%, transparent 100%);
+}
+.st>img {
+		height: 40px;
+}
+.about {
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px 10px 70px;
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	text-align: right;
+	background: linear-gradient(to left, black 70%, transparent 100%);
+}
+.st img:hover {
+	opacity: 60%;
+}
+.about:hover {
+	color: #fffa;
+}
+/************ANIMACION banner************/
+.banner {
+	position: absolute;
+	top: 8px;
+	color: var(--maincolor);
+	text-transform: uppercase;
+	display: flex;
+  	overflow: hidden;
+}
+.main2 {
+  color: var(--maincolor2);
+}
+.mover-texto {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  animation: mover 13s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/**********MAIN**********/
+
+.max {
+	padding: 40px 20px;
+	max-width: 1000px;
+	margin: auto;	
+}
+
+/**********SECTION HEADER**********/
+/********FONDO GRADIENT GENERAL********/
+body {
+	font-family: "Figtree", sans-serif;
+  	margin: 0;
+ 	transition: background-color 0.3s; 
+ 	background-color: rgb(244, 247, 247);
+}
+/********FONDO GRADIENT********/
+
+#header {
+	position: sticky;
+	top: 40px;
+	z-index: -30;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+
+}
+.titulo, #header p {
+	flex: 1 0 300px;
+	text-align: left;
+}
+#header h2 {
+	font-size: 4rem;
+	width: 300px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+#header h4 {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #0004;
+}
+#header p {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 35px;
+	min-width: 60%;
+}
+
+/********** KV **********/
+#kv {
+	background-color: white;
+	}
+	
+.max {
+	text-align: center;
+	}
+	.containMenu {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#carrusel1 {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+	
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+} 
+	
+.slides img {
+	width: 100%;
+	flex-shrink: 0;
+}
+	
+button.prev, button.next {
+	position: absolute;
+	align-items: center;
+	top: 50%;
+	color: white;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 16px 10px;
+	z-index: 1000;
+}
+button.prev {
+	left: 0;
+}
+	
+button.next {
+	right: 0;
+}
+button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**************GALERIA3***************/
+
+.galeria3 {
+	background-color: black;
+ }
+
+ .hovertext {
+	width: 100%;
+	margin-bottom: 10px;
+ }
+ .hovertext p {
+	display: none;
+ }
+.hovertext:first-of-type {
+	display: none;
+ }
+ #imagen-popup3 {
+	display: none;
+ }
+.hovertext:last-of-type {
+	margin-bottom: 0;
+ }
+
+/**************PACIENTES ***************/
+
+.pacientes {
+	background-color: rgb(244, 247, 247);
+	text-align: center;
+	padding: 20px 0;
+	}
+	.max {
+		text-align: center;
+	}
+	.pacientes h3 {	
+		color: var(--maincolor2);
+
+	}
+	img[src$="0.jpg"] {	
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.containPacientes {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	}
+	.carrusel {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	}
+	
+	.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	} 
+	.slides img {
+	width: 100%;
+	flex-shrink: 0;
+	}
+	
+	button.prev2, button.next2 {
+	position: absolute;
+	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 16px 10px;
+	z-index: 1000;
+	}
+	button.prev2 {
+	left: 0;
+	}
+	
+	button.next2 {
+	right: 0;
+	}
+	button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	}
+
+/**************MEDICOS ***************/
+
+.medicos {
+	background-color: white;
+	text-align: center;
+	padding: 20px 0;
+	}
+	.max {
+		text-align: center;
+	}
+	.medicos h3 {	
+		color: var(--maincolor2);
+	}	
+/**************FOOTER***************/
+footer {
+	background-color: black;
+	text-align: center;
+	color: var(--maincolor2);
+}
+.marg {
+	padding: 40px 20px;
+}
+.max a {
+	text-decoration: none;
+	color: var(--maincolor2);
+	font-size: .7rem;
+}
+.max a i {
+	font-size: 2rem;
+	padding: 0 5px;
+	color: white;
+}
+.max a:hover, footer i:hover {
+	opacity: 60%;
+}
+small {
+	display: block;
+}
+.marg > * {
+	padding-bottom: 20px;
+}
+.max h4 {
+	font-size: 2rem;
+	color: white;
+}
+/********** RESPONSIVE 600 *********/
+@media(min-width: 600px) {
+
+	.max {
+		padding: 80px 20px;
+		max-width: 1000px;
+		margin: auto;	
+	}
+/********FONDO GRADIENT********/
+
+
+#header h2 {
+	margin-bottom: 25px;
+}
+
+#header p {
+	padding: 40px 0;	
+}
+
+/**************GALERIA 3***************/
+.galeria-moderna3 img {
+	margin-bottom: 0;
+ }
+ .galeria-moderna3 img:first-of-type {
+	display: inherit;
+ }
+ #imagen-popup3 {
+	display: inherit;
+ }
+ .galeria-moderna3 img:last-of-type {
+	margin-bottom: 0;
+ }
+.galeria-moderna3 {
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.galeria-moderna3 img {
+   cursor: pointer;
+   width: 100%;
+}
+.hovertext:first-of-type {
+	flex: 1 0 250px;
+	display: initial;
+	width: 49.4%;
+
+ }
+.hovertext {
+	position: relative;
+	width: 49.4%;
+	margin-bottom: 0;
+}
+
+.hovertext p {
+	display: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font-weight: 600;
+	text-align: center;
+	align-content: center;
+	background-color: #0000;
+	color: #fff0;
+	text-transform: uppercase;
+}
+
+.hovertext p:hover {
+	background-color: #000a;
+	color: #fff;
+}
+#popup3 {
+	display: none;
+ }
+ 
+.popup3 {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2100;
+}
+
+.popup3 img {
+   display: inherit;
+   max-width: 80%;
+   max-height: 90%;
+}
+
+a.prev3, a.next3 {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   color: white;
+   font-size: 20px;
+}
+
+a.prev3 {
+   left: 10px;
+   display: inherit;
+}
+
+a.next3 {
+   right: 10px; 
+   display: inherit;
+}
+
+.cerrar3 {
+   display: inherit;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 25px;
+   color: white;
+   cursor: pointer;
+}
+
+/**************PACIENTES ***************/
+
+.pacientes {
+	padding: 0;
+	position: relative;
+	}
+
+	.pacientes h3 {	
+		position: absolute;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	img[src$="0.jpg"] {	
+		width: 30%;
+		margin-bottom: 0;
+	}
+	
+	.carrusel {
+		width: 68%;
+	}
+
+/**************MEDICOS ***************/
+
+.medicos {
+	background-color: white;
+	text-align: center;
+	position: relative;
+	}
+	.max {
+		text-align: center;
+	}
+	.medicos h3 {	
+		position: absolute;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: var(--maincolor2);
+	}	
+}
+

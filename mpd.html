@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi Primer Danone</title>
+	<meta name="description" content="Frontend HTML, CSS, JS - Art Director">
+	<meta name="keywords" content="Desarrollo de campañas globales 360. Diseño de packaging, stand, congresos, RRSS, Email marketing, Google adds. Programación Web, html, css, js, CLMs, Artes Finales.">
+	<meta name="author" content="silvia Táboas Arias">
+	<link rel="stylesheet" href="./css/style-mpd.css">
+	<script src="./js/scriptMpd.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" href="./img/iconST.png">
+</head>
+<body>
+<header>
+	<div class="fix-container">
+	<div id="menu">
+		<div class="menu">
+			<a href="./menu.html" class="st"><img src="./img/st.png" alt="home"></a>
+			<a href="./about.html" class="about">About</a>
+		</div>
+	</div>
+	<div class="banner">
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	 </div>	
+	 </div>
+</header>
+<main>
+	<section id="header" class="max">
+		<div class="titulo">
+			<h2>Loyalty campaign</h2>
+			<h4>Client: Mi Primer Danone</h4>
+		</div>
+		<p>Development and creation of the visual identity for a loyalty campaign. Focus on a cohesive brand image. It include various marketing materials ensuring the consistency across all touchpoints and maximizing customer engagement. Naming, PLV (Point of Sale Displays), Brochures, Landing, eDetailing.</p>
+	</section>	<!-- HEADER -->
+	<div class="cabecera">
+		<div class="contein maxCabecera">
+				<img src="./img/mpd/mpd.jpg" alt="Imagen de la campaña mi primer Danone"> 
+		</div>		
+	</div> <!-- CABECERA -->
+
+<div class="mpd">
+	<div class="max contMpd">	
+		<div class="galeria-moderna2 contPrimer">
+			<div class="hovertext2 mpdimg" onclick="abrirPopup(0)">
+				<p>Key Visual</p>
+				<img class="galPrimer" src="./img/mpd/mpd1.gif" alt="Key visual">
+			</div>
+			<div class="hovertext2 mpdimg" onclick="abrirPopup(1)">
+				<p>Adertisement</p>
+				<img class="galPrimer" src="./img/mpd/mpd2.gif" alt="Adertisement">
+			</div>
+			<div class="hovertext2 mpdimg" onclick="abrirPopup(2)">
+				<p>Banner</p>
+				<img class="galPrimer" src="./img/mpd/mpd3.jpg" alt="Banner">
+			</div>
+			<div class="hovertext2 mpdimg" onclick="abrirPopup(3)">
+				<p>Mail marketing</p>
+				<img class="galPrimer" src="./img/mpd/mpd4.jpg" alt="Mail marketing">
+			</div>
+			<div class="hovertext2 mpdimg" onclick="abrirPopup(4)">
+				<p>Presentation</p>
+				<img class="galPrimer" src="./img/mpd/mpd5.gif" alt="Presentation">
+			</div>
+		</div>
+
+		<div class="popup" id="popup">
+			<button class="prev2" onclick="cambiarFoto(-1)">&#10094;</button>
+			<img id="imagen-popup" src="./img/mpd/mpd1.gif" alt="Imagen ampliada">
+			<button class="next2" onclick="cambiarFoto(1)">&#10095;</button>
+			<span class="cerrar2" onclick="cerrarPopup()">×</span>
+		</div>	
+	</div> <!-- MAX -->
+	
+</div> <!-- MPD -->
+
+<div class="folleto3">
+	<div class="max containMenu">
+		<h3>Consumer brochure</h3>
+		<div class="carrusel">
+			<div class="slides">
+				<img src="./img/mpd/prod1.jpg" alt="trítico-Mockup">
+				<img src="./img/mpd/prod2.jpg" alt="tríptico-page 1">
+				<img src="./img/mpd/prod3.jpg" alt="tríptico-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+			<button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+		</div>	
+		<div class="carrusel">
+			<div class="slides triptic">
+			  <img src="./img/mpd/yogur1.jpg" alt="Tríptico yogur-Mockup">
+			  <img src="./img/mpd/yogur2.jpg" alt="Tríptico yogur-page 1">
+			  <img src="./img/mpd/yogur3.jpg" alt="Tríptico yogur-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel3(-1)">&#10094;</button>
+			<button class="next" onclick="moverCarrusel3(1)">&#10095;</button>
+		</div>	
+	</div>
+</div>
+
+<div class="folleto2">
+	<div class="max containMenu">
+		<h3>Medical target brochure</h3>
+		<div class="carrusel">
+			<div class="slides diptic">
+			  <img src="./img/mpd/diptic1.jpg" alt="Díptico-Mockup">
+			  <img src="./img/mpd/diptic2.jpg" alt="Díptico-page 1">
+			  <img src="./img/mpd/diptic3.jpg" alt="Díptico-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel2(-1)">&#10094;</button>
+			<button class="next" onclick="moverCarrusel2(1)">&#10095;</button>
+		</div>	
+	</div>
+</div> <!-- RECETAS -->
+</main>
+
+<footer>
+	<div class="max marg">	
+		<h4>Get in touch</h4>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/silvia-taboas-arias/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:siltaboas@hotmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+		</div>
+		<small>&copy; Silvia Táboas | Todos los derechos reservados.</small>
+		<small>Imagenes: <a href="https://pixabay.com/" target="_blank">Pixabay</a> - <a href="https://www.freepik.es/" target="_blank">Freepik</a></small>
+	</div>
+</footer>
+
+</body>
+</html>

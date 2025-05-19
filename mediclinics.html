@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Silvia Táboas-Mediclinics</title>
+	<meta name="description" content="Frontend HTML, CSS, JS - Art Director">
+	<meta name="keywords" content="Desarrollo de campañas globales 360. Diseño de packaging, stand, congresos, RRSS, Email marketing, Google adds. Programación Web, html, css, js, CLMs, Artes Finales.">
+	<meta name="author" content="silvia Táboas Arias">
+	<link rel="stylesheet" href="./css/style-mediclinics.css">
+	<script src="./js/scriptmed.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" href="./img/iconST.png">
+</head>
+<body>
+<header>
+	<div class="fix-container">
+	<div id="menu">
+		<div class="menu">
+			<a href="./menu.html" class="st"><img src="./img/st.png" alt="home"></a>
+			<a href="./about.html" class="about">About</a>
+		</div>
+	</div>
+	<div class="banner">
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	 </div>	
+	 </div>
+</header>
+<main>
+	<section id="header" class="max">
+		<div class="titulo">
+			<h2>Branding 50 years</h2>
+			<h4>Client: Mediclinics</h4>
+		</div>
+		<p>To commemorate the company's 50<sup>th</sup> anniversary, a distinctive brand design has been developed, symbolizing its vision. Additionally, a variety of promotional materials have been crafted to highlight this milestone and connect meaningfully with clients and partners.</p>
+	</section>	<!-- HEADER -->
+	<div class="kv">
+		<div class="contein max">
+			<img src="./img/mediclinics/m50m.jpg" alt="logo 50aniversario integrado" class="claim"> 
+			<ul class="logos">
+				<li><img src="./img/mediclinics/m50.jpg" alt="Logo color"></li>
+				<li><img src="./img//mediclinics/m501.jpg" alt="logo color en negativo"></li>
+				<li><img src="./img/mediclinics/m502.jpg" alt="Logo blanco y negro"></li>	
+				<li><img src="./img//mediclinics/m503.jpg" alt="logo blanco y negro en negativo"></li>			
+			</ul>	
+		</div>		
+	</div> <!-- -KV-LOGOS -->
+	<div class="galeria2">
+		<div class="galeria-moderna max">
+			<div class="hovertext" onclick="abrirPopup(0)">
+				<p>Mobile case</p>
+				<img src="./img/mediclinics/med1.jpg" alt="Key Visual">
+			</div>
+			<div class="hovertext" onclick="abrirPopup(1)">
+				<p>Gadget - Cup</p>
+				<img src="./img/mediclinics/med2.jpg" alt="Key Visual">
+			</div>
+			<div class="hovertext" onclick="abrirPopup(2)">
+				<p>Pen Drive</p>
+				<img src="./img/mediclinics/med3.jpg" alt="Key Visual">
+			</div>
+			<div class="hovertext" onclick="abrirPopup(3)">
+				<p>Brochure</p>
+				<img src="./img/mediclinics/med4.jpg" alt="Key Visual">
+			</div>
+			<div class="hovertext" onclick="abrirPopup(4)">
+				<p>Bag - Gadget</p>
+				<img src="./img/mediclinics/med5.jpg" alt="Key Visual">
+			</div>
+			<div class="hovertext" onclick="abrirPopup(5)">
+				<p>Backlit poster</p>
+				<img src="./img/mediclinics/med6.jpg" alt="Key Visual">
+			</div>		
+		</div>
+		<div class="popup" id="popup">
+		  <a class="prev" onclick="cambiarFoto(-1)">&#10094;</a>
+		  <img id="imagen-popup" src="./img/mediclinics/med1.jpg" alt="Imagen ampliada">
+		  <a class="next" onclick="cambiarFoto(1)">&#10095;</a>
+		  <span class="cerrar" onclick="cerrarPopup()">×</span>
+		</div>
+	</div> <!-- GALERIA 2 -->
+
+<!-- GALERIA-CAT -->
+
+	<div id="galeria-cat">
+		<div id="galeria-contein" class="max">	
+			<div class="container">
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat1.jpg" alt="Catalog Cover" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat2.jpg" alt="Index catalog" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat3.jpg" alt="Brand History" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat4.jpg" alt="Company Values" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat5.jpg" alt="Home Product Family" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat6.jpg" alt="Product introduction" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat7.jpg" alt="Technical Main Product Information" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat8.jpg" alt="Product introduction" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+			    <img src="./img/mediclinics/cat9.jpg" alt="Technical Secungary Product Information" style="width:100%">
+			  </div>
+			    
+			  <a class="prev2" onclick="plusSlides(-1)" style="color: #666; font-size:1rem">&#10094;</a>
+			  <a class="next2" onclick="plusSlides(1)" style="color: #666; font-size:1rem">&#10095;</a>
+
+			  <div class="caption-container">
+			    <p id="caption"></p>
+			  </div>
+
+			  <div class="row">
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Catalog Cover">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Index catalog">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Brand History">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Company Values">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Home Product Family">
+			    </div>    
+			    <div class="column">
+			      <img class="demo cursor" src="./img/mediclinics/cat6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Product introduction">
+			    </div>
+				<div class="column">
+					<img class="demo cursor" src="./img/mediclinics/cat7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Technical Main Product Information">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./img/mediclinics/cat8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Product introduction">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./img/mediclinics/cat9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Technical Secungary Product Information">
+				</div>
+			  </div>
+			</div>
+		</div>	
+	</div> <!-- GALERIA - CAT -->
+<div class="mail">
+	<div class="contein-mail max">
+		<h3>Emailing campaign</h3>
+		<div id="mail">
+			<img src="./img/mediclinics/mail1.jpg" alt="Emailing All in One">
+			<img src="./img/mediclinics/mail2.jpg" alt="Emailing Shade-Deluxe">
+			<img src="./img/mediclinics/mail3.jpg" alt="Emailing Black Line">
+			<img src="./img/mediclinics/mail4.jpg" alt="Emailing Hands Dryers">
+	</div>
+	</div>
+</div>  <!-- MAIL -->
+<div class="baby">
+	<div class="max containbaby">
+		<h3>Product Brochure - Babymedi</h3>
+		<div class="carrusel" id="carrusel1">
+			<div class="slides">
+			  <img src="./img/mediclinics/baby1.jpg" alt="Babymedi brochure-Mockup">
+			  <img src="./img/mediclinics/baby2.jpg" alt="Babymedi brochure-cover">
+			  <img src="./img/mediclinics/baby3.jpg" alt="Babymedi brochure-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel(-1, 'carrusel1')">&#10094;</button>
+			<button class="next" onclick="moverCarrusel(1, 'carrusel1')">&#10095;</button>
+		  </div>
+	</div>
+</div> <!-- BABY -->
+
+<div class="all">
+	<div class="max containall">
+		<h3>Product Brochure - All in One</h3>
+		<div class="carrusel" id="carrusel2">
+			<div class="slides">
+			  <img src="./img/mediclinics/all1.jpg" alt="All in One brochure-Mockup">
+			  <img src="./img/mediclinics/all2.jpg" alt="All in One brochure-cover">
+			  <img src="./img/mediclinics/all3.jpg" alt="All in One brochure-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel(-1, 'carrusel2')">&#10094;</button>
+			<button class="next" onclick="moverCarrusel(1, 'carrusel2')">&#10095;</button>
+		  </div>
+	</div>
+</div> <!-- ALL -->
+<div class="black">
+	<div class="max containblack">
+		<h3>Product Brochure - Black line</h3>
+		<div class="carrusel" id="carrusel3">
+			<div class="slides">
+			  <img src="./img/mediclinics/black1.jpg" alt="Black line brochure-Mockup">
+			  <img src="./img/mediclinics/black2.jpg" alt="Black line brochure-cover">
+			  <img src="./img/mediclinics/black3.jpg" alt="Black line brochure-page 2">
+			</div>
+			<button class="prev" onclick="moverCarrusel(-1, 'carrusel3')">&#10094;</button>
+			<button class="next" onclick="moverCarrusel(1, 'carrusel3')">&#10095;</button>
+		  </div>
+	</div>
+</div> <!-- Black -->
+
+</main>
+
+<footer>
+	<div class="max marg">	
+		<h4>Get in touch</h4>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/silvia-taboas-arias/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:siltaboas@hotmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+		</div>
+		<small>&copy; Silvia Táboas | Todos los derechos reservados.</small>
+		<small>Imagenes: <a href="https://pixabay.com/" target="_blank">Pixabay</a> - <a href="https://www.freepik.es/" target="_blank">Freepik</a></small>
+	</div>
+</footer>
+
+</body>
+</html>

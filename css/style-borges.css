@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--maincolor: #9e72ce;
+	--maincolor2: #00adba;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Antonio", sans-serif;
+}
+/**********HEADER**********/
+header {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 200;
+}
+.fix-container {
+	background-color: black;
+	position: relative;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.st {
+	z-index: 50;
+	padding: 10px 70px 10px 15px;
+	background: linear-gradient(to right, black 70%, transparent 100%);
+}
+.st>img {
+	height: 40px;
+}
+.about {
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px 10px 70px;
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	text-align: right;
+	background: linear-gradient(to left, black 70%, transparent 100%);
+}
+.st img:hover {
+	opacity: 60%;
+}
+.about:hover {
+	color: #fffa;
+}
+/************ANIMACION banner************/
+.banner {
+	position: absolute;
+	top: 8px;
+	color: var(--maincolor);
+	text-transform: uppercase;
+	display: flex;
+  	overflow: hidden;
+}
+.main2 {
+  	color: var(--maincolor2);
+}
+.mover-texto {
+  	display: inline-block;
+  	white-space: nowrap;
+  	font-size: 2rem;
+  	animation: mover 13s linear infinite;
+}
+
+@keyframes mover {
+	0% {
+    transform: translateX(0);
+  }
+	100% {
+    transform: translateX(-100%);
+  }
+}
+/**********MAIN**********/
+
+.max {
+	padding: 80px 20px;
+	max-width: 1000px;
+	margin: auto;	
+}
+
+/**********SECTION HEADER**********/
+/********FONDO GRADIENT********/
+body {
+	font-family: "Figtree", sans-serif;
+  	margin: 0;
+ 	transition: background-color 0.3s; 
+ 	background-color: rgb(244, 247, 247);
+}
+/********FONDO GRADIENT********/
+
+#header {
+	position: sticky;
+	top: 40px;
+	z-index: -30;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+
+}
+.titulo, #header p {
+	flex: 	1 0 300px;
+	text-align: left;
+}
+#header h2 {
+	font-size: 4rem;
+	width: 300px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#header h4 {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #0004;
+}
+#header p {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 35px;
+	padding: 20px 0;	
+}
+
+/**************HEADER-KV***************/
+
+.kv {
+	background-color: white;
+}
+.conteinkv img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+img[src$="/eating.jpg"] {
+	width: 100%;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+}
+
+/**************GALERIA 1***************/
+
+#galeria1 {
+	background-color: #000;
+}
+img {
+	vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	margin-bottom: 10px;
+	position: relative;
+}
+.container a {
+	display: none;
+}
+/* Container for image text */
+.caption-container {
+	display: none;
+}
+.row {
+	position: relative;
+	margin-top: -250px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Six columns side by side */
+.column {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/**************GALERIA2***************/
+
+.galeria2 {
+	background-color: white;
+}
+
+.gal {
+	width: 100%;
+}
+.hovertext {
+	margin-bottom: 10px;
+}
+
+.hovertext p {
+	display: none;
+}
+#imagen-popup {
+	display: none;
+}
+.hovertext:last-of-type {
+	margin-bottom: 0;
+}
+#popup {
+	display: none;
+}
+.prev2, .next2, .cerrar {
+	display: none;
+}
+
+/**************RECETAS***************/
+
+.recetas {
+	background-color: rgb(244, 247, 247);
+}
+.galreto {
+	width: 100%;
+}
+img[src$="bretoreceta.png"] {
+	display: none;
+  }
+.galeria-moderna2 img { 
+	width: 100%;
+	margin-bottom: 7px;	
+}
+.hovertext2 {
+	margin-bottom: 10px;
+}
+
+.hovertext2 p {
+	display: none;
+}
+#imagen-popup2 {
+	display: none;
+}
+.hovertext2:last-of-type {
+	margin-bottom: 0;
+}
+#popup2 {
+	display: none;
+}
+.prev3, .next3, .cerrar2 {
+	display: none;
+}
+
+
+
+/**************FOOTER***************/
+footer {
+	background-color: black;
+	text-align: center;
+	color: var(--maincolor2);
+}
+.max {
+	padding: 40px 20px;
+}
+.max a {
+	text-decoration: none;
+	color: var(--maincolor2);
+	font-size: .7rem;
+}
+.max a i {
+	font-size: 2rem;
+	padding: 0 5px;
+	color: white;
+}
+.max a:hover, footer i:hover {
+	opacity: 60%;
+}
+small {
+	display: block;
+}
+.marg>* {
+	padding-bottom: 20px;
+}
+.max h4 {
+	font-size: 2rem;
+	color: white;
+}
+
+/********** RESPONSIVE 600 *********/
+@media(min-width: 600px) {
+
+/**********GRADIENT**********/
+
+#header p {
+	padding: 20px 0;	
+}
+
+/********** SECTION HEADER KV **********/
+.conteinkv img {
+	width: 100%;
+}
+img[src$="alinea.jpg"] {
+	padding-top: 10px;
+	
+}
+.conteinkv {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.logos {
+	grid-column: 2/4;
+	grid-row: 1/2;
+}
+img[src$="/cartel-1.jpg"] {
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+img[src$="/cartel-2.jpg"] {
+	grid-column: 3/5;
+	grid-row: 2/3;
+}
+
+/**************GALERIA 1***************/
+
+#galeria1 {
+	background-color: #000;
+}
+img {
+	vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+}
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	margin-bottom: 0;
+	position: inherit;
+	z-index: inherit;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	padding: 16px;
+	margin-top: -50px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.next {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+.prev {
+	left: 0;
+	border-radius: 0 5px 5px 0;
+}
+.container a {
+	color: white;
+	display: inherit;
+}
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	display: inherit;
+	text-align: center;
+	background-color: #252525;
+	padding: 15px 16px;
+	color: white;
+}
+.row {
+	position: inherit;
+	margin-top: inherit;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 16.66%;
+	margin-bottom: 0;
+}
+.column:first-of-type {
+	float: left;
+	width: 16.66%;
+	display: inherit;
+  }
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+.active, .demo:hover {
+	opacity: 1;
+}
+
+/**************GALERIA2***************/
+.galeria-moderna {
+   gap: 5px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.hovertext {
+	position: relative;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+.hovertext:first-of-type {
+	grid-column: span 3;
+}
+.hovertext:nth-of-type(2) {
+	grid-column: span 3;
+}
+.hovertext:nth-of-type(3) {
+	grid-column: span 2;
+}
+.hovertext:nth-of-type(4) {
+	grid-column: span 2;
+}
+.hovertext:nth-of-type(5) {
+	grid-column: span 2;
+}
+.hovertext p {
+	display: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font-weight: 600;
+	text-align: center;
+	align-content: center;
+	background-color: #0000;
+	color: #fff0;
+	text-transform: uppercase;
+}
+.hovertext p:hover {
+	background-color: #000a;
+	color: #fff;
+}
+#imagen-popup {
+	display: inherit;
+ }
+#popup {
+	display: none;
+}
+.popup {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2100;
+}
+.popup img {
+   display: inherit;
+   max-width: 80%;
+   max-height: 90%;
+}
+a.prev2, a.next2 {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   color: white;
+   font-size: 20px;
+}
+a.prev2 {
+   left: 10px;
+   display: inherit;
+}
+a.next2 {
+   right: 10px; 
+   display: inherit;
+}
+.cerrar {
+   display: inherit;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 25px;
+   color: white;
+   cursor: pointer;
+}
+.prev2, .next2, .cerrar {
+	display: inherit;
+}
+
+/**********RECETAS**********/
+
+#logoreto{
+	position: relative;
+	left: 50%;
+}
+img[src$="bretoreceta.png"] {
+	display: inherit;
+	width: 45%;
+	margin-bottom: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contgrid {
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(13, 1fr);
+	grid-template-rows: 1fr 1fr;
+}
+.retoimg:first-of-type {
+	grid-column: 1/6;
+	grid-row: 1/3;
+
+}
+.retoimg:nth-of-type(2) {
+	grid-column: 6/10;
+	grid-row: 1/2;
+}
+.retoimg:nth-of-type(3) {
+	grid-column: 10/14;
+	grid-row: 1/2;
+}
+.retoimg:nth-of-type(4) {
+	grid-column: 6/10;
+	grid-row: 2/3;
+}
+.retoimg:nth-of-type(5) {
+	grid-column: 10/14;
+	grid-row: 2/3;
+}
+
+.retoimg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#imagen-popup2 {
+	display: inherit;
+ }
+#popup2 {
+	display: none;
+}
+.popup2 {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2100;
+}
+.popup2 img {
+   display: inherit;
+   max-width: 80%;
+   max-height: 90%;
+}
+button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+}
+button.prev3 {
+  left: 10px;
+}
+button.next3 {
+  right: 10px; 
+}
+.cerrar2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.prev3, .next3, .cerrar2 {
+	display: inherit;
+}
+
+}
+
+/********** RESPONSIVE 900 *********/
+@media(min-width: 900px) {
+
+/**********GRADIENT**********/
+
+#header p {
+	padding: 100px 0;	
+}
+
+/********** SECTION HEADER KV **********/
+.conteinkv {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+}
+.logos {
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+img[src$="/cartel-1.jpg"] {
+	grid-column: 3/6;
+	grid-row: 1/2;
+}
+img[src$="/cartel-2.jpg"] {
+	grid-column: 6/9;
+	grid-row: 1/2;
+}
+
+/**********RECETAS**********/
+
+}

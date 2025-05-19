@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NAN</title>
+	<meta name="description" content="Frontend HTML, CSS, JS - Art Director">
+	<meta name="keywords" content="Desarrollo de campañas globales 360. Diseño de packaging, stand, congresos, RRSS, Email marketing, Google adds. Programación Web, html, css, js, CLMs, Artes Finales.">
+	<meta name="author" content="silvia Táboas Arias">
+	<link rel="stylesheet" href="./css/style-tytheroy.css">
+	<script src="./js/script.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" href="./img/iconST.png">
+</head>
+<body>
+<header>
+	<div class="fix-container">
+	<div id="menu">
+		<div class="menu">
+			<a href="./menu.html" class="st"><img src="./img/st.png" alt="home"></a>
+			<a href="./about.html" class="about">About</a>
+		</div>
+	</div>
+	<div class="banner">
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	 </div>	
+	 </div>
+</header>
+<main class="color-change-4x">
+	<section id="header" class="max">
+		<div class="titulo">
+			<h2>Still in construction,</h2>
+			<h3 class="focus-in-expand">...we are weaving the last threads</h3>
+			<p>could use some patience</p>
+		</div>
+		<span class="draw">click and draw</span>
+	</section>	<!-- HEADER -->
+
+	<canvas id="canvas"></canvas>
+
+<script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let drawing = false;
+
+    canvas.addEventListener("mousedown", () => drawing = true);
+    canvas.addEventListener("mouseup", () => drawing = false);
+    canvas.addEventListener("mousemove", draw);
+
+    function draw(event) {
+        if (!drawing) return;
+
+        ctx.lineWidth = 100;
+        ctx.lineCap = "round";
+        ctx.strokeStyle = "#0001";
+
+        ctx.lineTo(event.clientX, event.clientY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(event.clientX, event.clientY);
+    }
+
+    window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+</script>
+
+</main>
+
+<footer>
+	<div class="max marg">	
+		<h4>Get in touch</h4>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/silvia-taboas-arias/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:siltaboas@hotmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+		</div>
+		<small>&copy; Silvia Táboas | Todos los derechos reservados.</small>
+		<small>Imagenes: <a href="https://pixabay.com/" target="_blank">Pixabay</a> - <a href="https://www.freepik.es/" target="_blank">Freepik</a></small>
+	</div>
+</footer>
+
+</body>
+</html>

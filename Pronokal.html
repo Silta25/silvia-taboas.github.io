@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pronokal</title>
+	<meta name="description" content="Frontend HTML, CSS, JS - Art Director">
+	<meta name="keywords" content="Desarrollo de campañas globales 360. Diseño de packaging, stand, congresos, RRSS, Email marketing, Google adds. Programación Web, html, css, js, CLMs, Artes Finales.">
+	<meta name="author" content="silvia Táboas Arias">
+	<link rel="stylesheet" href="./css/style-pronokal.css">
+	<script src="./js/scriptPronokal.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" href="./img/iconST.png">
+</head>
+<body>
+<header>
+	<div class="fix-container">
+	<div id="menu">
+		<div class="menu">
+			<a href="./menu.html" class="st"><img src="./img/st.png" alt="home"></a>
+			<a href="./about.html" class="about">About</a>
+		</div>
+	</div>
+	<div class="banner">
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	    <h1 class="mover-texto">Art Director<span class="main2">HTML·CSS·JS</span>ARTWORKS<span class="main2">Social media</span>photo edition<span class="main2">editorial</span>branding<span class="main2">Web</span></h1>
+	 </div>	
+	 </div>
+</header>
+<main>
+	<section id="header" class="max">
+		<div class="titulo">
+			<h2>Global campaign</h2>
+			<h4>Client: Pronokal</h4>
+		</div>
+		<p>Advertising campaign for Medical Products for weight loss. The communication show both the diversity of patient profiles and the company's commitment to providing Customized, high-quality Solutions. Because the most important is to feel good about yourself.</p>
+	</section>	<!-- HEADER -->
+	<div id="kv">
+		<div class="max containMenu">
+			<div class="carrusel" id="carrusel1">
+				<div class="slides">
+				  <img src="./img/pronokal/kv1.jpg" alt="key visual - medical product">
+				  <img src="./img/pronokal/kv2.jpg" alt="key visual - medical product">
+				  <img src="./img/pronokal/kv3.jpg" alt="key visual - medical product">
+				  <img src="./img/pronokal/kv4.jpg" alt="key visual - medical product">
+				  <img src="./img/pronokal/kv5.jpg" alt="key visual - medical product">
+				  <img src="./img/pronokal/kv6.jpg" alt="key visual - medical product">
+				</div>
+				<button class="prev" onclick="moverCarrusel(-1, 'carrusel1')">&#10094;</button>
+				<button class="next" onclick="moverCarrusel(1, 'carrusel1')">&#10095;</button>
+			  </div>
+		</div>
+	</div> <!-- KV -->
+	<div class="galeria3">
+		<div class="galeria-moderna3 max">
+			<div class="hovertext" onclick="abrirPopup3(0)">
+				<p>Landing page</p>
+				<img src="./img/pronokal/pro3.gif" alt="landing page">
+			</div>
+			<div class="hovertext" onclick="abrirPopup3(1)">
+				<p>Subway banner</p>
+				<img src="./img/pronokal/pro1.jpg" alt="subway banner">
+			</div>
+			<div class="hovertext" onclick="abrirPopup3(2)">
+				<p>Calendar</p>
+				<img src="./img/pronokal/pro4.jpg" alt="calendar" >
+			</div>
+			<div class="hovertext" onclick="abrirPopup3(3)">
+				<p>google ads</p>
+				<img src="./img/pronokal/pro2.jpg" alt="google ads">
+			</div>
+		</div>
+		<div class="popup3" id="popup3">
+		  <a class="prev3" onclick="cambiarFoto3(-1)">&#10094;</a>
+		  <img id="imagen-popup3" src="./img/pronokal/pro3.gif" alt="Imagen ampliada">
+		  <a class="next3" onclick="cambiarFoto3(1)">&#10095;</a>
+		  <span class="cerrar3" onclick="cerrarPopup3()">×</span>
+		</div>
+	</div> <!-- GALERIA 3 -->
+	<div class="pacientes">
+		<h3>Patient-focused communication</h3>
+		<div class="max containPacientes">
+			<img src="./img/pronokal/paciente0.jpg" alt="advertisement">
+			<div class="carrusel" id="carrusel2">
+				<div class="slides">
+				  <img src="./img/pronokal/paciente1.jpg" alt="Patient brochure-Mockup">
+				  <img src="./img/pronokal/paciente2.jpg" alt="Patient brochure-page 1">
+				  <img src="./img/pronokal/paciente3.jpg" alt="Patient brochure-page 2">
+				</div>
+				<button class="prev" onclick="moverCarrusel(-1, 'carrusel2')">&#10094;</button>
+				<button class="next" onclick="moverCarrusel(1, 'carrusel2')">&#10095;</button>
+			  </div>
+		</div>
+	</div> <!-- PACIENTES -->
+	<div class="medicos">
+		<h3>Doctor-focused communication</h3>
+		<div class="max containPacientes">
+			<img src="./img/pronokal/medicos0.jpg" alt="advertisement">
+			<div class="carrusel" id="carrusel3">
+				<div class="slides">
+				  <img src="./img/pronokal/medicos1.jpg" alt="Medical brochure-Mockup">
+				  <img src="./img/pronokal/medicos2.jpg" alt="Medical brochure-cover">
+				  <img src="./img/pronokal/medicos3.jpg" alt="Medical brochure-page 2">
+				  <img src="./img/pronokal/medicos4.jpg" alt="Medical brochure-page 3">
+				  <img src="./img/pronokal/medicos5.jpg" alt="Medical brochure-page 4">
+				</div>
+				<button class="prev" onclick="moverCarrusel(-1, 'carrusel3')">&#10094;</button>
+				<button class="next" onclick="moverCarrusel(1, 'carrusel3')">&#10095;</button>
+			  </div>
+		</div>
+	</div> <!-- MEDICOS -->
+
+</main>
+
+<footer>
+	<div class="max marg">	
+		<h4>Get in touch</h4>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/silvia-taboas-arias/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:siltaboas@hotmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+		</div>
+		<small>&copy; Silvia Táboas | Todos los derechos reservados.</small>
+		<small>Imagenes: <a href="https://pixabay.com/" target="_blank">Pixabay</a> - <a href="https://www.freepik.es/" target="_blank">Freepik</a></small>
+	</div>
+</footer>
+
+</body>
+</html>

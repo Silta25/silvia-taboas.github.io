@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--maincolor: #9e72ce;
+	--maincolor2: #00adba;
+	--light: rgb(244, 247, 247);
+	--light2: rgb(249, 245, 251);
+}
+body {
+	 font-family: "Figtree", sans-serif;
+	 background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Antonio", sans-serif;
+}
+/**********HEADER**********/
+header {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 2000;
+}
+.fix-container {
+	background-color: black;
+	position: relative;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.st {
+	z-index: 50;
+	padding: 10px 70px 10px 15px;
+	background: linear-gradient(to right, black 70%, transparent 100%);
+}
+.st>img {
+		height: 40px;
+}
+.about {
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px 10px 70px;
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	text-align: right;
+	background: linear-gradient(to left, black 70%, transparent 100%);
+}
+.st img:hover {
+	opacity: 60%;
+}
+.about:hover {
+	color: #fffa;
+}
+/************ANIMACION banner************/
+.banner {
+	position: absolute;
+	top: 8px;
+	color: var(--maincolor);
+	text-transform: uppercase;
+	display: flex;
+  	overflow: hidden;
+}
+.main2 {
+  color: var(--maincolor2);
+}
+.mover-texto {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  animation: mover 13s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/**********JUEGO BURBUJAS**********/
+
+.burbujasContain {
+	position: relative;
+ }
+#burbujas {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	overflow: hidden;
+
+}
+#game-container {
+    position: relative;
+	top: 0;
+	left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bubble {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    opacity: 0.8;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: float 50s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh); opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+
+/**********MAIN**********/
+
+.max {
+	padding: 150px 20px;
+	max-width: 1000px;
+	margin: auto;	
+	text-align: center;
+}
+
+/**********SECTION HEADER**********/
+/********FONDO GRADIENT********/
+
+.titulo {
+	text-align: center;
+	color: white;
+	padding: 80px 0;
+	margin-bottom: 50px;
+	margin: auto;
+}
+.titulo > h3 {
+	font-size: 4rem;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.titulo > p, .titulo > h2 {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 35px;
+}
+.draw {
+	border: 2px solid white;
+	padding: 15px 30px;
+	border-radius: 30px;
+	color: white;
+	font-family: "Figtree", sans-serif;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* animation color-change-4x */
+.color-change-4x {
+	-webkit-animation: color-change-4x 6s linear infinite alternate both;
+	        animation: color-change-4x 6s linear infinite alternate both;
+}
+
+@keyframes color-change-4x {
+  0% {
+    background: #033336;
+  }
+  33.3333% {
+    background: #301944;
+  }
+  66.666% {
+    background: #471745;
+  }
+  100% {
+    background: #2d1c53;
+  }
+}
+
+
+/**************FOOTER***************/
+footer {
+	background-color: black;
+	text-align: center;
+	color: var(--maincolor2);
+	/* position: sticky;
+	bottom: 0;
+	z-index: 2000; */
+}
+.marg {
+	padding: 40px 20px;
+}
+.max a {
+	text-decoration: none;
+	color: var(--maincolor2);
+	font-size: .7rem;
+}
+.max a i {
+	font-size: 2rem;
+	padding: 0 5px;
+	color: white;
+}
+.max a:hover, footer i:hover {
+	opacity: 60%;
+}
+small {
+	display: block;
+}
+.marg > * {
+	padding-bottom: 20px;
+}
+.max h4 {
+	font-size: 2rem;
+	color: white;
+}
+/********** RESPONSIVE 600 *********/
+@media(min-width: 900px) {
+
+/* animation focus-in-expand */
+
+ .focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+}

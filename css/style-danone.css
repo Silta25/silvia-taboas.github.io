@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--maincolor: #9e72ce;
+	--maincolor2: #00adba;
+	--light: rgb(244, 247, 247);
+	--light2: rgb(249, 245, 251);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Antonio", sans-serif;
+}
+/**********HEADER**********/
+header {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 2000;
+}
+.fix-container {
+	background-color: black;
+	position: relative;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.st {
+	z-index: 50;
+	padding: 10px 70px 10px 15px;
+	background: linear-gradient(to right, black 70%, transparent 100%);
+}
+.st>img {
+		height: 40px;
+}
+.about {
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px 10px 70px;
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	text-align: right;
+	background: linear-gradient(to left, black 70%, transparent 100%);
+}
+.st img:hover {
+	opacity: 60%;
+}
+.about:hover {
+	color: #fffa;
+}
+/************ANIMACION banner************/
+.banner {
+	position: absolute;
+	top: 8px;
+	color: var(--maincolor);
+	text-transform: uppercase;
+	display: flex;
+  	overflow: hidden;
+}
+.main2 {
+  color: var(--maincolor2);
+}
+.mover-texto {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  animation: mover 13s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/**********MAIN**********/
+
+.max {
+	padding: 80px	20px;
+	max-width: 1000px;
+	margin: auto;	
+}
+
+/**********SECTION HEADER**********/
+/********FONDO GRADIENT********/
+body {
+	font-family: "Figtree", sans-serif;
+  	margin: 0;
+ 	transition: background-color 0.3s; 
+ 	background-color: rgb(244, 247, 247);
+}
+/********FONDO GRADIENT********/
+
+#header {
+	position: sticky;
+	top: 40px;
+	z-index: -30;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+
+}
+.titulo, #header p {
+	flex: 1 0 300px;
+	text-align: left;
+}
+#header h2 {
+	font-size: 4rem;
+	width: 300px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+#header h4 {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #0004;
+}
+#header p {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 35px;
+}
+/**************Folletos***************/
+.KV {
+	background-color: black;
+}
+.max {
+	text-align: center;
+}
+.containMenu {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.carrusel {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}  
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  } 
+.slides img {
+	width: 100%;
+} 
+button.prev, button.next {
+	position: absolute;
+	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 16px 10px;
+	z-index: 1000;
+}
+button.prev {
+	left: 0;
+}
+button.next {
+	right: 0;
+}
+button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/********** SECTION cabecera **********/
+.cabecera {
+	background-color: white;
+}
+.maxCabecera {
+	max-width: 1000px;
+	margin: auto;	
+}
+.contein > img {
+	width: 100%;
+}
+.text > h3 {	
+	color: var(--maincolor2);
+	margin-bottom: 15px;
+}
+.text > p {	
+	font-size: .9rem;
+	font-weight: 300;
+	letter-spacing: .9px;
+	margin-bottom: 20px;
+	line-height: 25px;
+}
+/**************carrusel2***************/
+
+.carrusel2 {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.carrusel2 {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+  }  
+.slides2 {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  } 
+.slides2 img {
+	width: 100%;
+}
+/**************calendario***************/
+
+#calendario {
+	background-color: black;
+}
+
+.containCal img {
+	width: 100%;
+
+}
+.carrusel3, .carrusel4 {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+.slides3, .slides4 {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	margin-bottom: 10px;
+  } 
+
+.slides3 img, .slides4 img {
+	width: 100%;
+}
+/**************toppings***************/
+
+.carrusel4 {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+.slides4 {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	margin-bottom: 10px;
+  } 
+
+.slides4 img {
+	width: 100%;
+}
+/********** SECTION charlas **********/
+.charlas {
+	background-color: white;
+}
+.charlas img:last-of-type {
+	margin-top: 50px;
+}
+/**************Danomecum***************/
+.danomecum {
+	position: sticky;
+	top: 50px;
+	z-index: 100;
+}
+.max {
+	text-align: center;
+}
+.containMenu {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+}
+.carrusel5 {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}  
+.slides5 {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  } 
+.slides5 img  {
+	width: 100%;
+}
+.ipad {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+/**************FOOTER***************/
+footer {
+	background-color: black;
+	text-align: center;
+	color: var(--maincolor2);
+}
+.marg {
+	padding: 40px 20px;
+}
+.max a {
+	text-decoration: none;
+	color: var(--maincolor2);
+	font-size: .7rem;
+}
+.max a i {
+	font-size: 2rem;
+	padding: 0 5px;
+	color: white;
+}
+.max a:hover, footer i:hover {
+	opacity: 60%;
+}
+small {
+	display: block;
+}
+.marg > * {
+	padding-bottom: 20px;
+}
+.max h4 {
+	font-size: 2rem;
+	color: white;
+}
+/********** RESPONSIVE 600 *********/
+@media(min-width: 600px) {
+
+/********FONDO GRADIENT********/
+
+#header {
+	position: sticky;
+	top: 40px;
+	z-index: -30;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+
+}
+.titulo, #header p {
+	flex: 1 0 300px;
+	text-align: left;
+}
+#header h2 {
+	font-size: 4rem;
+	width: 300px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+#header h4 {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #0004;
+}
+#header p {
+	font-family: "Figtree", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 35px;
+	padding: 40px 0;	
+}
+/**************calendario***************/
+  
+.slides3 {
+	margin-bottom: 0;
+  } 
+.containCal {
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(13, 1fr);
+grid-template-rows: 1fr 1fr;
+}
+.carrusel3 {
+	grid-column: 1/9;
+	grid-row: 1/2;
+}
+img[src="./img/danone/d1.jpg"] {
+	grid-column: 9/14;
+	grid-row: 1/2;
+}
+img[src="./img/danone/top1.jpg"] {
+	grid-column: 1/6;
+	grid-row: 2/3;
+}
+.carrusel4 {
+	grid-column: 6/14;
+	grid-row: 2/3;
+} 
+
+}
