@@ -161,7 +161,9 @@ img[src$="m50m.jpg"] {
 	margin-top: 20px;
 	width: 80%;
 }
-
+img[src$="m501.jpg"] {
+	width: 100%;
+}
 img[src$="m50.jpg"], img[src$="m502.jpg"], img[src$="m503.jpg"] {
 	display: none;
 }
