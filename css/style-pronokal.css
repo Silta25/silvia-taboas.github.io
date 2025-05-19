@@ -215,7 +215,9 @@ button:hover {
 .hovertext:last-of-type {
 	margin-bottom: 0;
  }
-
+.galeria-moderna3 img {
+	width: 100%;
+ }
 /**************PACIENTES ***************/
 
 .pacientes {
